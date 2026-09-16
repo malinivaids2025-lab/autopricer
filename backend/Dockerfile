@@ -9,11 +9,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python requirements
-COPY backend/requirements.txt /app/backend/requirements.txt
-RUN pip install --no-cache-dir -r /app/backend/requirements.txt
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy backend source code, data and models
-COPY backend /app/backend
+COPY . .
 
 # Set Python path to /app
 ENV PYTHONPATH=/app
@@ -22,4 +22,4 @@ ENV PYTHONPATH=/app
 EXPOSE 8000
 
 # Run FastAPI with uvicorn dynamically binding to Render's $PORT
-CMD ["sh", "-c", "uvicorn backend.app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
