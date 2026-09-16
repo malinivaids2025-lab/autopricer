@@ -5,7 +5,7 @@ from typing import List
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.app.schemas import (
+from app.schemas import (
     CarInput,
     PricePredictionResponse,
     SellingTimePredictionResponse,
