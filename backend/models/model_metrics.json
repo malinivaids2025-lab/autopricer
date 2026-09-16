@@ -1,0 +1,22 @@
+{
+  "best_price_model": "XGBoost Regressor",
+  "price_metrics": {
+    "random_forest": {
+      "rmse": 256337.8,
+      "mae": 120508.2,
+      "r2": 0.9111
+    },
+    "xgboost": {
+      "rmse": 233892.6,
+      "mae": 113379.36,
+      "r2": 0.926
+    }
+  },
+  "selling_time_metrics": {
+    "rmse": 24.85,
+    "mae": 18.36,
+    "r2": 0.4122
+  },
+  "dataset_size": 15411,
+  "inventory_count": 15411
+}

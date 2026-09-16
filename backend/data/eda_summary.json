@@ -1,0 +1,558 @@
+{
+  "metadata": {
+    "initial_rows": 15411,
+    "cleaned_rows": 15411,
+    "price_outliers_capped": 4,
+    "mileage_outliers_capped": 19,
+    "price_bounds": [
+      40000.0,
+      11182350.0
+    ],
+    "mileage_bounds": [
+      100.0,
+      444000.0
+    ]
+  },
+  "price_stats": {
+    "mean": 771955.7,
+    "median": 556000.0,
+    "std": 820198.07,
+    "min": 40000.0,
+    "q25": 385000.0,
+    "q75": 825000.0,
+    "max": 11182350.0
+  },
+  "mileage_stats": {
+    "mean": 55137.41,
+    "median": 50000.0,
+    "std": 37991.76,
+    "min": 100.0,
+    "max": 444000.0
+  },
+  "days_to_sale_stats": {
+    "mean": 41.82,
+    "median": 32.0,
+    "min": 3,
+    "max": 150
+  },
+  "brand_summary": [
+    {
+      "brand": "Maruti Suzuki",
+      "count": 4992,
+      "avg_price": 487089.32,
+      "median_price": 465000.0,
+      "avg_days_to_sale": 39.5
+    },
+    {
+      "brand": "Hyundai",
+      "count": 2982,
+      "avg_price": 576153.92,
+      "median_price": 525000.0,
+      "avg_days_to_sale": 42.7
+    },
+    {
+      "brand": "Honda",
+      "count": 1485,
+      "avg_price": 617756.9,
+      "median_price": 590000.0,
+      "avg_days_to_sale": 39.2
+    },
+    {
+      "brand": "Mahindra",
+      "count": 1011,
+      "avg_price": 787455.0,
+      "median_price": 750000.0,
+      "avg_days_to_sale": 39.2
+    },
+    {
+      "brand": "Toyota",
+      "count": 793,
+      "avg_price": 1371316.52,
+      "median_price": 1265000.0,
+      "avg_days_to_sale": 41.2
+    },
+    {
+      "brand": "Ford",
+      "count": 790,
+      "avg_price": 645224.05,
+      "median_price": 570000.0,
+      "avg_days_to_sale": 41.3
+    },
+    {
+      "brand": "Volkswagen",
+      "count": 620,
+      "avg_price": 516546.77,
+      "median_price": 499000.0,
+      "avg_days_to_sale": 39.4
+    },
+    {
+      "brand": "Renault",
+      "count": 536,
+      "avg_price": 440985.07,
+      "median_price": 395000.0,
+      "avg_days_to_sale": 40.1
+    },
+    {
+      "brand": "BMW",
+      "count": 439,
+      "avg_price": 2693826.88,
+      "median_price": 2300000.0,
+      "avg_days_to_sale": 52.3
+    },
+    {
+      "brand": "Tata",
+      "count": 430,
+      "avg_price": 683534.88,
+      "median_price": 550000.0,
+      "avg_days_to_sale": 48.7
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "count": 337,
+      "avg_price": 2475348.22,
+      "median_price": 1800000.0,
+      "avg_days_to_sale": 62.7
+    },
+    {
+      "brand": "Skoda",
+      "count": 334,
+      "avg_price": 784089.82,
+      "median_price": 590000.0,
+      "avg_days_to_sale": 48.6
+    },
+    {
+      "brand": "Audi",
+      "count": 192,
+      "avg_price": 1966864.58,
+      "median_price": 1700000.0,
+      "avg_days_to_sale": 52.3
+    },
+    {
+      "brand": "Datsun",
+      "count": 170,
+      "avg_price": 320517.65,
+      "median_price": 300000.0,
+      "avg_days_to_sale": 36.4
+    },
+    {
+      "brand": "Jaguar",
+      "count": 59,
+      "avg_price": 2643033.9,
+      "median_price": 2500000.0,
+      "avg_days_to_sale": 47.8
+    },
+    {
+      "brand": "Land Rover",
+      "count": 51,
+      "avg_price": 3823901.96,
+      "median_price": 3400000.0,
+      "avg_days_to_sale": 48.9
+    },
+    {
+      "brand": "Jeep",
+      "count": 41,
+      "avg_price": 1795804.88,
+      "median_price": 1600000.0,
+      "avg_days_to_sale": 38.0
+    },
+    {
+      "brand": "Kia",
+      "count": 32,
+      "avg_price": 1735250.0,
+      "median_price": 1554500.0,
+      "avg_days_to_sale": 34.4
+    },
+    {
+      "brand": "Porsche",
+      "count": 21,
+      "avg_price": 5161190.48,
+      "median_price": 5000000.0,
+      "avg_days_to_sale": 48.1
+    },
+    {
+      "brand": "Volvo",
+      "count": 20,
+      "avg_price": 3729700.0,
+      "median_price": 3750000.0,
+      "avg_days_to_sale": 46.4
+    },
+    {
+      "brand": "MG",
+      "count": 19,
+      "avg_price": 1752947.37,
+      "median_price": 1750000.0,
+      "avg_days_to_sale": 29.7
+    },
+    {
+      "brand": "Mini",
+      "count": 17,
+      "avg_price": 2182647.06,
+      "median_price": 1800000.0,
+      "avg_days_to_sale": 57.2
+    },
+    {
+      "brand": "Nissan",
+      "count": 11,
+      "avg_price": 955363.64,
+      "median_price": 950000.0,
+      "avg_days_to_sale": 42.9
+    },
+    {
+      "brand": "Lexus",
+      "count": 10,
+      "avg_price": 5146500.0,
+      "median_price": 4600000.0,
+      "avg_days_to_sale": 61.2
+    },
+    {
+      "brand": "Isuzu",
+      "count": 8,
+      "avg_price": 1355000.0,
+      "median_price": 1225000.0,
+      "avg_days_to_sale": 42.5
+    },
+    {
+      "brand": "Bentley",
+      "count": 3,
+      "avg_price": 8160783.33,
+      "median_price": 8100000.0,
+      "avg_days_to_sale": 68.7
+    },
+    {
+      "brand": "ISUZU",
+      "count": 2,
+      "avg_price": 1897500.0,
+      "median_price": 1897500.0,
+      "avg_days_to_sale": 33.0
+    },
+    {
+      "brand": "Maserati",
+      "count": 2,
+      "avg_price": 6100000.0,
+      "median_price": 6100000.0,
+      "avg_days_to_sale": 22.5
+    },
+    {
+      "brand": "Force",
+      "count": 1,
+      "avg_price": 700000.0,
+      "median_price": 700000.0,
+      "avg_days_to_sale": 24.0
+    },
+    {
+      "brand": "Ferrari",
+      "count": 1,
+      "avg_price": 11182350.0,
+      "median_price": 11182350.0,
+      "avg_days_to_sale": 17.0
+    },
+    {
+      "brand": "Mercedes-AMG",
+      "count": 1,
+      "avg_price": 5100000.0,
+      "median_price": 5100000.0,
+      "avg_days_to_sale": 34.0
+    },
+    {
+      "brand": "Rolls-Royce",
+      "count": 1,
+      "avg_price": 11182350.0,
+      "median_price": 11182350.0,
+      "avg_days_to_sale": 20.0
+    }
+  ],
+  "region_summary": [
+    {
+      "region": "Central",
+      "count": 2568,
+      "avg_price": 762486.37,
+      "avg_mileage": 55060.7,
+      "avg_days_to_sale": 41.7
+    },
+    {
+      "region": "East",
+      "count": 2568,
+      "avg_price": 790114.88,
+      "avg_mileage": 55238.7,
+      "avg_days_to_sale": 41.9
+    },
+    {
+      "region": "Metro",
+      "count": 2569,
+      "avg_price": 762754.38,
+      "avg_mileage": 55060.8,
+      "avg_days_to_sale": 41.8
+    },
+    {
+      "region": "North",
+      "count": 2569,
+      "avg_price": 763124.79,
+      "avg_mileage": 54646.1,
+      "avg_days_to_sale": 41.2
+    },
+    {
+      "region": "South",
+      "count": 2569,
+      "avg_price": 778812.65,
+      "avg_mileage": 55777.6,
+      "avg_days_to_sale": 42.2
+    },
+    {
+      "region": "West",
+      "count": 2568,
+      "avg_price": 774445.48,
+      "avg_mileage": 55040.4,
+      "avg_days_to_sale": 42.1
+    }
+  ],
+  "year_trend": [
+    {
+      "year": 1995,
+      "count": 1,
+      "avg_price": 60000.0,
+      "avg_mileage": 22612.0
+    },
+    {
+      "year": 1999,
+      "count": 1,
+      "avg_price": 1000000.0,
+      "avg_mileage": 50000.0
+    },
+    {
+      "year": 2002,
+      "count": 1,
+      "avg_price": 70000.0,
+      "avg_mileage": 70000.0
+    },
+    {
+      "year": 2003,
+      "count": 3,
+      "avg_price": 73333.33,
+      "avg_mileage": 94333.3
+    },
+    {
+      "year": 2005,
+      "count": 5,
+      "avg_price": 74000.0,
+      "avg_mileage": 97900.0
+    },
+    {
+      "year": 2006,
+      "count": 11,
+      "avg_price": 125000.0,
+      "avg_mileage": 120809.5
+    },
+    {
+      "year": 2007,
+      "count": 17,
+      "avg_price": 156470.59,
+      "avg_mileage": 82558.8
+    },
+    {
+      "year": 2008,
+      "count": 25,
+      "avg_price": 126240.0,
+      "avg_mileage": 80832.4
+    },
+    {
+      "year": 2009,
+      "count": 90,
+      "avg_price": 188376.39,
+      "avg_mileage": 86580.9
+    },
+    {
+      "year": 2010,
+      "count": 129,
+      "avg_price": 260682.17,
+      "avg_mileage": 80292.0
+    },
+    {
+      "year": 2011,
+      "count": 237,
+      "avg_price": 278485.23,
+      "avg_mileage": 85638.2
+    },
+    {
+      "year": 2012,
+      "count": 293,
+      "avg_price": 318290.1,
+      "avg_mileage": 77645.6
+    },
+    {
+      "year": 2013,
+      "count": 551,
+      "avg_price": 426237.75,
+      "avg_mileage": 80996.1
+    },
+    {
+      "year": 2014,
+      "count": 710,
+      "avg_price": 496147.89,
+      "avg_mileage": 75468.2
+    },
+    {
+      "year": 2015,
+      "count": 1027,
+      "avg_price": 589235.98,
+      "avg_mileage": 74152.4
+    },
+    {
+      "year": 2016,
+      "count": 1282,
+      "avg_price": 625945.4,
+      "avg_mileage": 70921.8
+    },
+    {
+      "year": 2017,
+      "count": 1438,
+      "avg_price": 699075.8,
+      "avg_mileage": 66498.3
+    },
+    {
+      "year": 2018,
+      "count": 1924,
+      "avg_price": 728514.55,
+      "avg_mileage": 61844.3
+    },
+    {
+      "year": 2019,
+      "count": 2117,
+      "avg_price": 818892.77,
+      "avg_mileage": 53902.1
+    },
+    {
+      "year": 2020,
+      "count": 2252,
+      "avg_price": 945162.23,
+      "avg_mileage": 44609.0
+    },
+    {
+      "year": 2021,
+      "count": 1926,
+      "avg_price": 976151.27,
+      "avg_mileage": 33032.3
+    },
+    {
+      "year": 2022,
+      "count": 1145,
+      "avg_price": 1118291.14,
+      "avg_mileage": 19446.0
+    },
+    {
+      "year": 2023,
+      "count": 221,
+      "avg_price": 1096977.38,
+      "avg_mileage": 11119.4
+    },
+    {
+      "year": 2024,
+      "count": 5,
+      "avg_price": 2230000.0,
+      "avg_mileage": 8800.0
+    }
+  ],
+  "fuel_breakdown": [
+    {
+      "fuel_type": "CNG",
+      "count": 301,
+      "avg_price": 417687.71
+    },
+    {
+      "fuel_type": "Diesel",
+      "count": 7419,
+      "avg_price": 1000469.34
+    },
+    {
+      "fuel_type": "Electric",
+      "count": 4,
+      "avg_price": 1853500.0
+    },
+    {
+      "fuel_type": "LPG",
+      "count": 44,
+      "avg_price": 206272.73
+    },
+    {
+      "fuel_type": "Petrol",
+      "count": 7643,
+      "avg_price": 566781.8
+    }
+  ],
+  "transmission_breakdown": [
+    {
+      "transmission": "Automatic",
+      "count": 3186,
+      "avg_price": 1564970.94
+    },
+    {
+      "transmission": "Manual",
+      "count": 12225,
+      "avg_price": 565285.22
+    }
+  ],
+  "correlation_matrix": {
+    "year": {
+      "year": 1.0,
+      "mileage": -0.4543,
+      "owner_count": -0.8796,
+      "vehicle_age": -1.0,
+      "price": 0.2601,
+      "days_to_sale": 0.316,
+      "is_luxury": -0.0865
+    },
+    "mileage": {
+      "year": -0.4543,
+      "mileage": 1.0,
+      "owner_count": 0.4471,
+      "vehicle_age": 0.4543,
+      "price": -0.118,
+      "days_to_sale": -0.138,
+      "is_luxury": -0.0092
+    },
+    "owner_count": {
+      "year": -0.8796,
+      "mileage": 0.4471,
+      "owner_count": 1.0,
+      "vehicle_age": 0.8796,
+      "price": -0.2297,
+      "days_to_sale": -0.306,
+      "is_luxury": 0.0972
+    },
+    "vehicle_age": {
+      "year": -1.0,
+      "mileage": 0.4543,
+      "owner_count": 0.8796,
+      "vehicle_age": 1.0,
+      "price": -0.2601,
+      "days_to_sale": -0.316,
+      "is_luxury": 0.0865
+    },
+    "price": {
+      "year": 0.2601,
+      "mileage": -0.118,
+      "owner_count": -0.2297,
+      "vehicle_age": -0.2601,
+      "price": 1.0,
+      "days_to_sale": 0.4275,
+      "is_luxury": 0.6573
+    },
+    "days_to_sale": {
+      "year": 0.316,
+      "mileage": -0.138,
+      "owner_count": -0.306,
+      "vehicle_age": -0.316,
+      "price": 0.4275,
+      "days_to_sale": 1.0,
+      "is_luxury": 0.1149
+    },
+    "is_luxury": {
+      "year": -0.0865,
+      "mileage": -0.0092,
+      "owner_count": 0.0972,
+      "vehicle_age": 0.0865,
+      "price": 0.6573,
+      "days_to_sale": 0.1149,
+      "is_luxury": 1.0
+    }
+  }
+}
