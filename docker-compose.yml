@@ -3,8 +3,8 @@ version: '3.8'
 services:
   backend:
     build:
-      context: .
-      dockerfile: backend/Dockerfile
+      context: ./backend
+      dockerfile: Dockerfile
     container_name: autopricer-backend
     ports:
       - "8000:8000"
@@ -14,8 +14,8 @@ services:
 
   frontend:
     build:
-      context: .
-      dockerfile: frontend/Dockerfile
+      context: ./frontend
+      dockerfile: Dockerfile
     container_name: autopricer-frontend
     ports:
       - "5173:5173"
