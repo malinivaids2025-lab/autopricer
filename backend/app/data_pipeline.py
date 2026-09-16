@@ -6,7 +6,7 @@ from typing import Dict, Any, Tuple, Optional
 import numpy as np
 import pandas as pd
 
-from backend.app.config import (
+from app.config import (
     DATA_DIR,
     RAW_DATA_PATH,
     CLEANED_DATA_PATH,
@@ -421,7 +421,7 @@ def generate_eda_summary(df: pd.DataFrame, cleaning_meta: Dict[str, Any]) -> Dic
 
 
 def load_or_create_dataset(force_synthetic: bool = False) -> Tuple[pd.DataFrame, Dict[str, Any]]:
-    """Load real dataset from /backend/data (prioritizing cardekho_dataset.csv or used_cars.csv)."""
+    """Load real dataset from data directory (prioritizing cardekho_dataset.csv or used_cars.csv)."""
     target_csv = None
 
     # Priority 1: cardekho_dataset.csv
@@ -446,7 +446,7 @@ def load_or_create_dataset(force_synthetic: bool = False) -> Tuple[pd.DataFrame,
         df_raw = pd.read_csv(target_csv)
     else:
         logger.info("No CSV found. Creating synthetic dataset...")
-        from backend.app.data_pipeline import generate_synthetic_data
+        from app.data_pipeline import generate_synthetic_data
         df_raw = generate_synthetic_data(num_samples=5000)
         df_raw.to_csv(RAW_DATA_PATH, index=False)
 

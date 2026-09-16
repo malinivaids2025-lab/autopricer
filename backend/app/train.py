@@ -13,8 +13,8 @@ from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from xgboost import XGBRegressor
 
-from backend.app.config import MODELS_DIR, CLEANED_DATA_PATH
-from backend.app.data_pipeline import load_or_create_dataset
+from app.config import MODELS_DIR, CLEANED_DATA_PATH
+from app.data_pipeline import load_or_create_dataset
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)

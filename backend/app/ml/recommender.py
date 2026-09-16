@@ -4,8 +4,8 @@ from typing import List
 import numpy as np
 import pandas as pd
 
-from backend.app.config import MODELS_DIR, CURRENT_YEAR
-from backend.app.schemas import CarInput, SimilarCar
+from app.config import MODELS_DIR, CURRENT_YEAR
+from app.schemas import CarInput, SimilarCar
 
 logger = logging.getLogger(__name__)
 

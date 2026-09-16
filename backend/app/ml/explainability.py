@@ -6,8 +6,8 @@ import pandas as pd
 import shap
 from lime.lime_tabular import LimeTabularExplainer
 
-from backend.app.config import MODELS_DIR, CURRENT_YEAR
-from backend.app.schemas import CarInput
+from app.config import MODELS_DIR, CURRENT_YEAR
+from app.schemas import CarInput
 
 logger = logging.getLogger(__name__)
 

@@ -3,9 +3,9 @@ import logging
 from typing import Dict, Any, List
 import pandas as pd
 
-from backend.app.config import EDA_SUMMARY_PATH, CLEANED_DATA_PATH
-from backend.app.schemas import MarketAnalyticsResponse, OptionsResponse
-from backend.app.ml.msrp_data import BRAND_MODELS_MSRP
+from app.config import EDA_SUMMARY_PATH, CLEANED_DATA_PATH
+from app.schemas import MarketAnalyticsResponse, OptionsResponse
+from app.ml.msrp_data import BRAND_MODELS_MSRP
 
 logger = logging.getLogger(__name__)
 

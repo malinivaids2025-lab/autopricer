@@ -17,14 +17,14 @@ from app.schemas import (
     PhotoConditionEvaluateRequest,
     PhotoConditionEvaluateResponse,
 )
-from backend.app.config import MODELS_DIR
-from backend.app.ml.price_model import price_service
-from backend.app.ml.selling_time_model import selling_time_service
-from backend.app.ml.explainability import explainability_service
-from backend.app.ml.recommender import recommender_service
-from backend.app.ml.fraud_detector import fraud_detector_service
-from backend.app.ml.market_analytics import market_analytics_service
-from backend.app.ml.msrp_data import get_base_msrp, calculate_bounded_condition_adjustment
+from app.config import MODELS_DIR
+from app.ml.price_model import price_service
+from app.ml.selling_time_model import selling_time_service
+from app.ml.explainability import explainability_service
+from app.ml.recommender import recommender_service
+from app.ml.fraud_detector import fraud_detector_service
+from app.ml.market_analytics import market_analytics_service
+from app.ml.msrp_data import get_base_msrp, calculate_bounded_condition_adjustment
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger("autopricer-api")
@@ -48,7 +48,7 @@ async def lifespan(app: FastAPI):
     if missing:
         logger.warning(f"Missing model artifacts on startup ({len(missing)} files). Running automated bootstrap training...")
         try:
-            from backend.app.train import run_full_training
+            from app.train import run_full_training
             run_full_training()
             logger.info("Automated model training completed on boot.")
         except Exception as e:
@@ -298,3 +298,9 @@ def get_options():
     except Exception as e:
         logger.error(f"Error in get_options: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=str(e))
+
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", "8000"))
+    uvicorn.run("app.main:app", host="0.0.0.0", port=port, reload=False)

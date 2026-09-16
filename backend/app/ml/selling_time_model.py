@@ -5,8 +5,8 @@ from typing import Dict, Any, Tuple, List
 import numpy as np
 import pandas as pd
 
-from backend.app.config import MODELS_DIR, CURRENT_YEAR
-from backend.app.schemas import CarInput
+from app.config import MODELS_DIR, CURRENT_YEAR
+from app.schemas import CarInput
 
 logger = logging.getLogger(__name__)
 

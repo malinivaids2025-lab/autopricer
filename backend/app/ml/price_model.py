@@ -5,9 +5,9 @@ from typing import Dict, Any, Tuple, List
 import numpy as np
 import pandas as pd
 
-from backend.app.config import MODELS_DIR, CURRENT_YEAR
-from backend.app.schemas import CarInput
-from backend.app.ml.msrp_data import get_base_msrp
+from app.config import MODELS_DIR, CURRENT_YEAR
+from app.schemas import CarInput
+from app.ml.msrp_data import get_base_msrp
 
 logger = logging.getLogger(__name__)
 
